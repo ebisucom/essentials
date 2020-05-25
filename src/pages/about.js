@@ -9,7 +9,7 @@ import { faUtensils, faCheckSquare } from "@fortawesome/free-solid-svg-icons"
 
 import SEO from "../components/seo"
 
-export default ({ data, location }) => (
+const About = ({ data, location }) => (
   <Layout>
     <SEO
       pagetitle="ESSENTIALS について"
@@ -82,3 +82,4 @@ export const query = graphql`
     }
   }
 `
+export default About

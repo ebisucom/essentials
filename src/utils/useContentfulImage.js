@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-export default assetUrl => {
+const UseContentfulImage = assetUrl => {
   const { allContentfulAsset } = useStaticQuery(graphql`
     query {
       allContentfulAsset {
@@ -18,3 +18,5 @@ export default assetUrl => {
 
   return allContentfulAsset.nodes.find(n => n.file.url === assetUrl).fluid
 }
+
+export default UseContentfulImage

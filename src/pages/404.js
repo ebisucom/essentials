@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 
-export default ({ location }) => (
+const NotFound = ({ location }) => (
   <Layout>
     <SEO pagetitle="ページが見つかりません" pagepath={location.pathname} />
     <h1 style={{ padding: "20vh 0", textAlign: "center" }}>
@@ -11,3 +11,5 @@ export default ({ location }) => (
     </h1>
   </Layout>
 )
+
+export default NotFound

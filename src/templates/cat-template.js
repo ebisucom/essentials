@@ -11,7 +11,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 
-export default ({ data, location, pageContext }) => (
+const CatTemp = ({ data, location, pageContext }) => (
   <Layout>
     <SEO
       pagetitle={`CATEGORY: ${pageContext.catname}`}
@@ -99,3 +99,5 @@ export const query = graphql`
     }
   }
 `
+
+export default CatTemp

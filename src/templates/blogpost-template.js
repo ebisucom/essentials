@@ -44,7 +44,7 @@ const options = {
   },
 }
 
-export default ({ data, pageContext, location }) => (
+const BlogpostTemp = ({ data, pageContext, location }) => (
   <Layout>
     <SEO
       pagetitle={data.contentfulBlogPost.title}
@@ -144,3 +144,5 @@ export const query = graphql`
     }
   }
 `
+
+export default BlogpostTemp

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 
-export default ({ data }) => (
+const Home = ({ data }) => (
   <Layout>
     <SEO />
     <section className="hero">
@@ -183,3 +183,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Home
