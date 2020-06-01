@@ -24,6 +24,8 @@ const About = ({ data, location }) => (
         <Img
           fluid={data.about.childImageSharp.fluid}
           alt="ブルーベリー＆ヨーグルト"
+          loading="eager"
+          durationFadeIn={100}
         />
       </figure>
     </div>

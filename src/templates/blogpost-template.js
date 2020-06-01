@@ -61,6 +61,8 @@ const BlogpostTemp = ({ data, pageContext, location }) => (
         <Img
           fluid={data.contentfulBlogPost.eyecatch.fluid}
           alt={data.contentfulBlogPost.eyecatch.description}
+          loading="eager"
+          durationFadeIn={100}
         />
       </figure>
     </div>

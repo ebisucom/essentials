@@ -30,6 +30,8 @@ const CatTemp = ({ data, location, pageContext }) => (
                     fluid={node.eyecatch.fluid}
                     alt={node.eyecatch.description}
                     style={{ height: "100%" }}
+                    loading="eager"
+                    durationFadeIn={100}
                   />
                 </figure>
                 <h3>{node.title}</h3>
@@ -46,8 +48,8 @@ const CatTemp = ({ data, location, pageContext }) => (
                   pageContext.currentPage === 2
                     ? `/cat/${pageContext.catslug}/`
                     : `/cat/${pageContext.catslug}/${
-                        pageContext.currentPage - 1
-                      }/`
+                    pageContext.currentPage - 1
+                    }/`
                 }
                 rel="prev"
               >
@@ -61,7 +63,7 @@ const CatTemp = ({ data, location, pageContext }) => (
               <Link
                 to={`/cat/${pageContext.catslug}/${
                   pageContext.currentPage + 1
-                }/`}
+                  }/`}
                 rel="next"
               >
                 <span> 次のページ</span>

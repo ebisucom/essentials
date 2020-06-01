@@ -30,6 +30,8 @@ const BlogTemp = ({ data, location, pageContext }) => (
                     fluid={node.eyecatch.fluid}
                     alt={node.eyecatch.description}
                     style={{ height: "100%" }}
+                    loading="eager"
+                    durationFadeIn={100}
                   />
                 </figure>
                 <h3>{node.title}</h3>
