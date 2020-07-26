@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import RandomPosts from "../components/randomposts"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock, faFolderOpen } from "@fortawesome/free-regular-svg-icons"
@@ -109,6 +110,8 @@ const BlogpostTemp = ({ data, pageContext, location }) => (
             </li>
           )}
         </ul>
+
+        <RandomPosts a_number={5} id={pageContext.id} />
       </div>
     </article>
   </Layout>
